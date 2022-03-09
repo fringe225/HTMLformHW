@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+<body style = "background-size:cover;background-image: url('https://venngage-wordpress.s3.amazonaws.com/uploads/2018/09/Colorful-Geometric-Simple-Background-Image.jpg');">
+    <form style = "width: 30%; background: rgba(247, 242, 242, 0.09); border-radius: 16px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); backdrop-filter: blur(3.2px); -webkit-backdrop-filter: blur(3.2px); border: 1px solid rgba(247, 242, 242, 0.34);
+    padding: 20px 10px 10px 10px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 10rem auto">
+    
+        <h1 style = "font-style:italic; font-weight: 900;">Registration</h1>
+        
+            <input type="text" required style="width: 40%;padding: 3%;outline: none;border-radius: 5px;border: 1px solid grey;"  placeholder="Name">
+            <input type="text" required style="width: 40%;padding: 3%;outline: none;border-radius: 5px;border: 1px solid grey;" placeholder="Surname">   
+
+        
+        <div>  
+            <input type="email" required placeholder="Email or Phone number" style = "width: 87%;
+            padding: 3%;
+            outline: none;
+            border-radius: 5px;
+            border: 1px solid gray;
+            margin-top: 10px;">
+            <input type="password" required placeholder="Password" style = "width: 87%;
+            padding: 3%;
+            outline: none;
+            border-radius: 5px;
+            border: 1px solid gray;
+            margin-top: 10px;">
+            <input type="password" required placeholder="Confirm your Password" style = "width: 87%;
+            padding: 3%;
+            outline: none;
+            border-radius: 5px;
+            border: 1px solid gray;
+            margin-top: 10px;">
+        </div>
+        
+        <br>
+        <label for="Date" style = "display: block; 
+        font-size: 20px; 
+        text-align: left;
+        margin-left: 15px;
+        font-weight: 600;" >Date of Birth</label>
+        <br>
+
+        <input style="width: 90%;
+        border-radius:5px;
+        border: 1px solid gray;
+        outline:none;
+        padding: 3%;" type="date" name="Date">
+        <br>
+        <br>
+
+        <label for="GenderDiv" style = "display: block; 
+        font-size: 20px; 
+        text-align: left;
+        margin-left: 15px;
+        font-weight: 600;" >Select Gender</label>
+        <br>
+       <div id="GenderDiv">
+            
+            <label for="Male" style = "text-align: left;
+            margin-left: 15px;
+            font-weight: 600;" >Male</label>
+            <input type="radio" name="Gender" id ="Male">
+            <label for="Femalae" style = "
+            margin-left: 15px;
+            font-weight: 600;">Female</label>
+            <input type="radio" name = "Gender" id="Female">
+        </div>
+        <br>
+
+       
+        <label for="SecretQuestion" style = "display: block; 
+        font-size: 20px; 
+        text-align: left;
+        margin-left: 15px;
+        font-weight: 600;">Choose Secret Question</label>
+        <div id="SecretQuestion">
+            <select style = "width: 87%;
+            padding: 3%;
+            outline: none;
+            border-radius: 5px;
+            border: 1px solid gray;
+            margin-top: 10px;">
+                <option value="1" >My Favorite food?</option>
+                <option value="2">Best friend's name?</option>
+                <option value="3">First Certificate which I got?</option>
+            </select>
+            <input  requird type="text" required placeholder="Answer..." style = "width: 87%;
+            padding: 3%;
+            outline: none;
+            border-radius: 5px;
+            border: 1px solid gray;
+            margin-top: 10px;">
+        </div>
+        <br>
+        
+        <p style = "display: block; 
+            font-size: 20px; 
+            text-align: left;
+            margin-left: 15px;
+            font-weight: 600;
+            text-align: center;">How did you find our WebSite?</p>
+        
+            <input type="checkbox" id="From Friends">
+            <label for="From Friends" style = "text-align: left;
+            font-weight: 600;">From friends.</label>
+            <br>
+            
+            <input type="checkbox" id="Internet">
+            <label for="Internet" style = "text-align: left;
+            font-weight: 600;">From Internet.</label>
+            <br>
+            <input type="checkbox" id="From Radio">
+            <label for="From Radio" style = "text-align: left;
+            font-weight: 600;">From Radio Ads.</label>
+            <br>
+            <input type="checkbox" id="Traffic Banner">
+            <label for="Traffic Banner" style = "text-align: left;
+            font-weight: 600;">From Traffic Banner.</label>
+            <br>
+        
+        <br>
+        <br>
+
+        <input type="checkbox"  id="Agree">
+        <label style =  "text-align: left;
+        font-weight: 600;" for="Agree">I read and I Agree with rules of this WebSite</label>
+        <br>
+        <br>
+        <button style ="background-color: #36A420;color: 
+        #fff;border: 1px solid #36A420;
+        font-weight: bold;
+        border-radius: 5px;cursor: 
+        pointer;
+        font-size: 17px;
+        width: 87%;
+        padding: 12px 0;
+        margin: 20px 0;"
+        type="submit">Sing Up</button>
+        <br>
+        <br>
+        <a style = "text-decoration: none;color: #1877f2;" href="signin.html">Already have Account?</a>
+    </form>
+</body>
+</html>
